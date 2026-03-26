@@ -8,3 +8,9 @@ CREATE TABLE recebimento_materias_primas
        numero_nota_fiscal INTEGER,
        data_chegada TEXT,
        peso_total_kg DECIMAL (10, 3));
+
+--1. Adicionando uma nova coluna--
+ALTER TABLE recebimento_materias_primas ADD COLUMN lote TEXT;
+
+--2. Renomeando uma coluna--
+alter table recebimento_materias_primas RENAME COLUMN data_chegada TO data_recebimento;

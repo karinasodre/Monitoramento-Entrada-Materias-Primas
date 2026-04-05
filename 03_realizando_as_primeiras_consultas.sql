@@ -2,10 +2,10 @@
 SELECT nome_fornecedor, peso_total_kg 
 FROM recebimento_materias_primas;
 
--- Consulta para ver apenas as notas fiscais que pesam mais de 1.000kg --
+-- Consulta para ver apenas as notas fiscais que pesam mais de 100kg --
 SELECT *
 FROM recebimento_materias_primas
-WHERE peso_total_kg > 1.000;
+WHERE peso_total_kg > 100;
 
 -- Busca apenas por fornecedores que contém 'Alpha' no nome --
 SELECT *

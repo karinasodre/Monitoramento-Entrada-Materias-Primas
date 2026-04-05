@@ -15,7 +15,7 @@ WHERE nome_fornecedor LIKE '%Alpha%';
 -- Querys um pouco mais complexas --
 
 -- 1. Filtros Compostos (AND) --
--- "Quero ver cargas do Fornecedor Alpha que pesem mais de 500kg" --
+-- "Quero ver cargas do Fornecedor Alpha que pesem mais de 20kg" --
 SELECT nome_fornecedor, numero_nota_fiscal, peso_total_kg
 FROM recebimento_materias_primas
 WHERE nome_fornecedor = 'Fornecedor Alpha'
